@@ -3,13 +3,13 @@ import {getFirestore} from "firebase/firestore"
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCAFdKJhOczq_6GIdj1vQ61nJKwkz07Nek",
-    authDomain: "drive-project-24583.firebaseapp.com",
-    projectId: "drive-project-24583",
-    storageBucket: "drive-project-24583.appspot.com",
-    messagingSenderId: "987933207382",
-    appId: "1:987933207382:web:776ae430583e2f6f93c4f7",
-    measurementId: "G-F5VW3E0Q6Z"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain:  process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId:  process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket:  process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId:  process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId:  process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId:  process.env.EACT_APP_MEASUREMENT_ID
 };
 
 
